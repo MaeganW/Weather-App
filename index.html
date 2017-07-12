@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1>TEST</h1>
+        </header>
+
+        <div class="content-container">
+            <div class="temp-container">
+                <p><span class="temp-display"></span> <img src="#" alt="symbol"></p>
+            </div>
+
+            <div class="rain-container">
+                <p><span class="rain-display"></span> % chance of rain</p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="getLocation()">Get Coordinates</button>
+    
+    <h2>Coordinates</h2>
+    <p id="demo"></p>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
