@@ -15,20 +15,12 @@ function showPosition(position) {
     console.log("latitude: " + latitude + " longitude: " + longitude);
     
     $.ajax({
-        url: "https://api.darksky.net/forecast/1c80bf92aadd3db44c05ce1c48912649/" + latitude + "," + longitude,
+        url: "http://api.wunderground.com/api/657659e007fc1bed/conditions/q/CA/San_Francisco.json",
         success: function (obj) {
-            console.log("success");
-//            var temp = obj.currently.temperature;
-//            console.log(temp);
+            console.log(obj.current_observation.temp_f);
+
         }
     });
 }
-
-
-$(document).ready(function () {
-
-    
-});
-
 
 
