@@ -1,4 +1,18 @@
 html, body {
     margin: 0;
     height: 100%;
+    background-color: #1E352F;
+}
+
+.content-container{
+    max-width: 1000px;
+    padding: 1rem 0;
+    margin: 6.25rem auto;
+    background-color: #335145;
+    color: #BEEF9E;
+    text-align: center;
+}
+
+header {
+    padding-bottom: 1.3rem;
 }

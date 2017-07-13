@@ -10,26 +10,23 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="content-container">
         <header>
-            <h1>TEST</h1>
+            <h1>Weather App</h1>
         </header>
 
-        <div class="content-container">
-            <div class="temp-container">
-                <p><span class="temp-display"></span> <img src="#" alt="symbol"></p>
-            </div>
+        <div class="location-container">
+            <h2>Show my location!</h2>
+            <button onclick="getLocation()">Get Location</button>
+            <p><span class="location-display"></span></p>
+        </div>
 
-            <div class="rain-container">
-                <p><span class="rain-display"></span> % chance of rain</p>
-            </div>
+        <div class="temp-container">
+            <h2>What's the weather like?</h2>
+            <button onclick="getWeather()">Get Weather</button>
+            <p><span class="temp-display"></span></p>
         </div>
     </div>
-
-    <button onclick="getLocation()">Get Coordinates</button>
-    
-    <h2>Coordinates</h2>
-    <p id="demo"></p>
 
     <script src="app.js"></script>
 </body>
